@@ -1,7 +1,6 @@
 // var app = document.getElementById('app');
 //
 // app.innerHTML = "Hello Pizza"
-// force push to Git
 
 var React = require("react");
 var ReactDOM = require("react-dom");
@@ -9,12 +8,14 @@ var ReactDOM = require("react-dom");
 var post = {
   title: "Hondas 4 Lyfe",
   author: "Soichiro Honda",
-  body: "Revs are free, bitches.",
+  body: "Revs are free, biziches.",
   comments: [
     "w0rd",
-    "EP3s!"
+    "EP3s!",
+    "9000 rpm or bust"
   ]
 }
+
 
 var Post = React.createClass({
   render: function(){
@@ -24,7 +25,12 @@ var Post = React.createClass({
         <p>By: {this.props.author}</p>
         <p>{this.props.body}</p>
         <h2>Comments</h2>
-        <p>{this.props.comment}</p>
+          var comment = function(comment){
+             Comment = [];
+          for(i=0; i<=comment.length; i++)
+            <p>{this.props.comment}</p>
+          };
+      };
       </div>
     )
   }
